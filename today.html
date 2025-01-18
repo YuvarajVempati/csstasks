@@ -1,0 +1,257 @@
+<html>
+<head><title> scroll</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+
+.container{
+display: flex;
+position:fixed;
+justify-content:space-around;
+background-color:black;
+padding:10px;
+width:100%;
+}
+body{ 
+ margin:0px
+}
+
+nav{
+display:flex;
+text-align:center;
+}
+
+nav > a{
+text-decoration:none;
+color:white;
+width:200px;
+text-align:center;
+
+
+}
+
+a:hover{
+color:black;
+background-color:gray;
+}
+.one{
+    position: absolute;
+    top: 200px;
+    left:600px;
+    color: white;
+    font-size: 3.4rem;    
+    
+
+}
+.two{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 1px;
+
+}
+.three{
+    color: white;
+    position: absolute;
+    right: 1px;
+    bottom: 0px;
+
+}
+.four{
+    background-color: black;
+    color: white;
+    width: 5opx;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    padding: 0px;
+
+
+    
+    
+}
+.par{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px;
+    margin-bottom: 20px;
+    word-spacing: 6px;
+    text-align: justify;
+}
+.box{
+    border-left: 8px solid lightgray;
+    background-color: aliceblue;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.img{
+    width: 900px;
+    object-fit: cover;
+    padding: 8px;
+    flex-direction: column;
+    display: flex;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-left: 200px;
+    padding-right: 200px;
+
+
+}
+
+#eat,#drink,.eat1,.drink1{
+    display: none;
+}
+#eat:checked~.eat1{
+    display:block;
+
+}
+#drink:checked~.drink1{
+
+    display:block;
+}
+.label{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    flex: 1;
+
+
+}
+.where{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.fyi{
+    background-color: black;
+    color: white;
+    width: 2px;
+}
+.submit{
+    background-color: black;
+    color:white;
+    padding: 5px;
+}
+</style>
+<body>
+<header>
+<header class="container">
+<nav><a href="#"> HOME </a></nav>
+<nav><a href="#">ABOUT</a></nav>
+<nav><a href="#">MENU</a></nav>
+<nav><a href="#">WHERE</a></nav>
+</header>
+<img src="https://wp-media.patheos.com/blogs/sites/578/2016/11/photo-1413745000559-46fdd2d81cd7_opt.jpg" width="100%">
+<div class="one">the <br> cafe</div>
+<div class="two">open from 6am to 5pm</div>
+<div class="three">Cafe15 Adr street, 5015</div><br>
+<br>
+<main>
+<section class="four">
+    <span>ABOUT THE CAFE</span></section>
+    
+
+<section class="par">  The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,
+     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+     ullamco laboris nisi ut aliquip ex ea commodo consequat.</section>
+<br>
+<section class="par">
+    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p><br>
+    <br>
+    <section class="box">
+    <p >"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet".
+    <br>
+    <br>
+    
+    Chef, Coffeeist and Owner: Liam Brown
+    </p></section>
+<br>
+<img class="img"src="https://www.w3schools.com/w3images/coffeeshop.jpg" width="300px">
+<p><b>Opening hours: </b> everyday from 6am to 5pm.</p>
+
+   <p><b> Address:</b> 15 Adr street, 5015, NY</p>
+   <p class="hd"> THE MENU</p>
+   <div class="label">
+    <label for="eat" class="label1">Eat</label>
+    <label for="drink" class="label2">Drink</label></div>
+    <input type="radio" id="eat" name="x" checked>
+    <input type="radio" id="drink" name="x" checked>
+    
+    
+  
+    
+    <div class="eat1">
+    <b>Bread Basket</b> 
+    <P> Assortment offresh baked fruit breads and muffins 5.50</P>
+        
+        
+        <b>Honey Almond Granola with Fruits</b>
+        <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+        
+        
+        <b>Belgian Waffle</b>
+        <p> Vanilla flavored batter with malted flour 7.50</p>
+        
+        
+        <b>Scrambled eggs</b>
+        <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+        
+        
+        <b>Blueberry Pancakes</b>
+        <p>With syrup, butter and lots of berries 8.50</p>
+</div>
+    <div class="drink1">
+<br>coffe</br>
+<p>Regular coffee 2.50</p>
+
+
+<br>Chocolato</br>
+<p>Chocolate espresso with milk 4.50</p>
+
+
+<b>Corretto</b>
+<p>Whiskey and coffee 5.00</p>
+
+
+<br>Iced tea</br>
+<p>Hot tea, except not hot 3.00</p>
+
+
+<b>Soda</b>
+<p>Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>
+    </div>
+<img src="https://www.w3schools.com/w3images/coffeehouse2.jpg">
+<span class="where">WHERE TO FIND US</span><br>
+<p>Find us at some address at some place.</p>
+<img src="https://www.w3schools.com/w3images/map.jpg"><br></main>
+<div class="fyi">FYI! </div><P>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+
+Reserve a table, ask for today's special or just send us a message:</P>
+<form method="get">
+    <input type="text" Name="Name" placeholder="Name" ><br>
+    <br>
+    <input type="number"Name="people" placeholder="How many people"><br>
+    <br>
+   <input type="datetime-local" Name="date time"><br>
+   <br>
+   <input type="text" placeholder=" Message \ Special requirements"><br>
+   <br>
+   <input type="submit" value="send message" class="submit">
+   
+</form> 
+<center>
+<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p></center>
+
+</body>
+</head>
+</html>
